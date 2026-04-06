@@ -41,7 +41,7 @@ export function Navbar() {
         <div className="flex items-center gap-3">
           <span
             className="text-sm transition-colors cursor-pointer hover:text-white"
-            style={{ color: "var(--color-muted)" }}
+            style={{ color: "var(--color-text)" }}
           >
             Log in
           </span>
