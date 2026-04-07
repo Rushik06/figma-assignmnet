@@ -7,10 +7,13 @@
 
   --color-purple:         #5e6ad2;
   --color-purple-light:   #7b86e8;
+  --color-spotlight:      rgba(94, 86, 255, 0.35);
   --color-purple-muted:   rgba(94, 106, 210, 0.15);
   --color-purple-border:  rgba(94, 106, 210, 0.3);
   --color-btn-gradient:   linear-gradient(#4A53B7 0%, #7A00D9 100%);
   --color-arc-glow:       radial-gradient(ellipse at 50% 100%, rgba(94, 106, 210, 0.2) 0%, transparent 70%);
+  --color-dump:           rgba(255, 255, 255, 0.8);
+  --color-track:          rgba(255, 255, 255, 0.1);
 
   --color-text:           #ffffff;
   --color-muted:          #8a8fa8;
