@@ -19,7 +19,7 @@ export function Navbar() {
         opacity,
         background: "var(--color-bg)",
         borderColor: "var(--color-border)",
-        backdropFilter: "blur(12px)",
+        backdropFilter: "blur(15px)",
       }}
       className="fixed top-0 w-full z-50 border-b flex items-center"
       initial={{ y: -60, opacity: 0 }}
