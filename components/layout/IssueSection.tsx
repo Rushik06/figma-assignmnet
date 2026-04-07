@@ -34,7 +34,7 @@ export function IssueSection() {
           style={{
             background: "linear-gradient(to bottom, var(--color-dump), var(--color-track))",
             WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
+            WebkitTextFillColor: "transperent"
           }}
         >
           you'll enjoy using
@@ -54,7 +54,7 @@ export function IssueSection() {
         </div>
 
         <p
-          className="mt-16 max-w-2xl mx-auto text-lg md:text-xl leading-relaxed"
+          className="mt-16 max-w-3xl mx-auto text-lg font semibold md:text-3xl leading-relaxed"
           style={{ color: "var(--color-muted)" }}
         >
           Create tasks in seconds, discuss issues in

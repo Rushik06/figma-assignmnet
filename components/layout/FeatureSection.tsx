@@ -2,7 +2,8 @@ import Image from "next/image"
 
 export function FeaturesSection() {
   return (
-    <section className="relative py-28 overflow-hidden" style={{ background: "var(--color-bg)" }}>
+    <section className="relative py-28 overflow-hidden"
+      style={{ background: "var(--color-bg)" }}>
       <div className="max-w-5xl mx-auto px-6">
 
         <div className="text-center mb-16">
@@ -51,13 +52,13 @@ export function FeaturesSection() {
 
             <div className="px-6 py-6 text-center">
               <h3
-                className="text-xl font-semibold mb-2"
+                className="text-2xl font-semibold mb-2"
                 style={{ color: "var(--color-text)" }}
               >
                 Built for your keyboard
               </h3>
-              <p className="text-md leading-relaxed" style={{ color: "var(--color-muted)" }}>
-                Fly through your tasks with rapid-fire keyboard 
+              <p className="text-md font-semibold leading-relaxed" style={{ color: "var(--color-muted)" }}>
+                Fly through your tasks with rapid-fire keyboard
                 <br />shortcuts for everything. Literally everything.
               </p>
             </div>
@@ -77,12 +78,12 @@ export function FeaturesSection() {
 
             <div className="px-6 py-6 text-center">
               <h3
-                className="text-xl font-semibold mb-2"
+                className="text-2xl font-semibold mb-2"
                 style={{ color: "var(--color-text)" }}
               >
                 Breathtakingly fast
               </h3>
-              <p className="text-md leading-relaxed" style={{ color: "var(--color-muted)" }}>
+              <p className="text-md font-semibold leading-relaxed" style={{ color: "var(--color-muted)" }}>
                 Built for speed with 50ms interactions and real-time sync.
               </p>
             </div>
@@ -95,12 +96,24 @@ export function FeaturesSection() {
             style={{ background: "var(--color-surface)", borderColor: "var(--color-border)" }}
           >
             <Image
-              src="/Group 14.png"
+              src="/Screen Shot 2023-05-02 at 16.19 1.png"
               alt="Designed for modern software teams"
-              width={300}
-              height={50} 
-              className="w-full h-full object-cover"
+              width={100}
+              height={50}
+              className="w-full h-auto"
             />
+            <div className="px-6 py-6 text-center">
+              <h3
+                className="text-2xl font-semibold mb-2"
+                style={{ color: "var(--color-text)" }}
+              >
+                Designed for modern software teams
+              </h3>
+              <p className="text-md font-semibold leading-relaxed" style={{ color: "var(--color-muted)" }}>
+                Built for speed with 50ms
+                <br />interactions and real-time sync.
+              </p>
+            </div>
           </div>
 
           <div
@@ -109,12 +122,12 @@ export function FeaturesSection() {
           >
             <div className="px-8 pt-8 pb-4 text-center">
               <h3
-                className="text-xl font-semibold mb-2"
+                className="text-2xl font-semibold mb-2"
                 style={{ color: "var(--color-text)" }}
               >
                 Meet your command line
               </h3>
-              <p className="text-md leading-relaxed" style={{ color: "var(--color-muted)" }}>
+              <p className="text-md font-semibold leading-relaxed" style={{ color: "var(--color-muted)" }}>
                 Complete any action in seconds
                 <br />with the global command menu.
               </p>

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --color-bg:             #010112;
+  --color-bg:             #010112; 
   --color-surface:        #0d0d1f;
   --color-surface-hover:  #13132a;
 
@@ -20,7 +20,9 @@
   --color-subtle:         #4f5068;
 
   --color-border:         rgba(255, 255, 255, 0.08);
+  --color-border-feature: rgba(255, 255, 255, 0.733);
   --color-border-strong:  rgba(255, 255, 255, 0.14);
+ 
 
   --color-success:        #26c281;
   --color-warning:        #f5a623;
@@ -34,7 +36,10 @@
   --shadow-sm:          0 1px 3px rgba(0, 0, 0, 0.4);
   --shadow-md:          0 4px 16px rgba(0, 0, 0, 0.5);
   --shadow-hero:        0 32px 80px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --shadow-card:        0 32px 80px rgba(26, 16, 92, 0.6), 0 0 0 1px rgba(50, 10, 99, 0.05);
+  
   --shadow-glow-purple: 0 0 24px rgba(94, 106, 210, 0.35);
+  
 }
 
 @layer base {
