@@ -1,9 +1,14 @@
+"use client"
+
 import Image from "next/image"
+import { motion } from "framer-motion"
 
 export function EndSection() {
     return (
-        <section className="relative py-28 overflow-hidden"
-            style={{ background: "var(--color-bg)" }}>
+        <section
+            className="relative py-28 overflow-hidden"
+            style={{ background: "var(--color-bg)" }}
+        >
 
             <div className="flex justify-center mb-12">
                 <Image
@@ -17,7 +22,13 @@ export function EndSection() {
 
             <div className="max-w-6xl mx-auto px-6">
 
-                <div className="mb-20 flex justify-center">
+                <motion.div
+                    initial={{ opacity: 0, y: 60, scale: 0.96 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    viewport={{ once: false }}
+                    transition={{ duration: 0.7, ease: "easeOut" }}
+                    className="mb-20 flex justify-center"
+                >
                     <Image
                         src="/Frame 1 (1).png"
                         alt="features"
@@ -25,11 +36,13 @@ export function EndSection() {
                         height={300}
                         className="w-full max-w-5xl h-auto"
                     />
-                </div>
+                </motion.div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                    <div
+                    <motion.div
+                        whileHover={{ y: -6, scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
                         className="rounded-3xl overflow-hidden border flex flex-col"
                         style={{
                             borderColor: "var(--color-border)",
@@ -37,13 +50,42 @@ export function EndSection() {
                         }}
                     >
                         <div className="p-8 pb-4">
-                            <h3 className="text-2xl font-semibold mb-2" style={{ color: "var(--color-text)" }}>
-                                List and board
-                            </h3>
-                            <p className="text-sm  font-semibold leading-relaxed" style={{ color: "var(--color-muted)" }}>
+
+                            <motion.h3
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: false }}
+                                className="text-2xl font-semibold mb-2"
+                                style={{ color: "var(--color-text)" }}
+                            >
+                                {"List and board".split("").map((c, i) => (
+                                    <motion.span
+                                        key={i}
+                                        variants={{
+                                            hidden: { opacity: 0, y: 20 },
+                                            show: {
+                                                opacity: 1,
+                                                y: 0,
+                                                transition: { delay: i * 0.02 }
+                                            }
+                                        }}
+                                    >
+                                        {c}
+                                    </motion.span>
+                                ))}
+                            </motion.h3>
+
+                            <motion.p
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: false }}
+                                className="text-sm font-semibold leading-relaxed"
+                                style={{ color: "var(--color-muted)" }}
+                            >
                                 Switch between list and board layout
                                 <br />to view work from any angle.
-                            </p>
+                            </motion.p>
+
                         </div>
 
                         <div className="relative mt-4 overflow-hidden max-h-[280px]">
@@ -59,9 +101,11 @@ export function EndSection() {
                                 style={{ background: "linear-gradient(to top, var(--color-surface), transparent)" }}
                             />
                         </div>
-                    </div>
+                    </motion.div>
 
-                    <div
+                    <motion.div
+                        whileHover={{ y: -6, scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
                         className="rounded-3xl overflow-hidden border flex flex-col"
                         style={{
                             borderColor: "var(--color-border)",
@@ -69,13 +113,43 @@ export function EndSection() {
                         }}
                     >
                         <div className="p-8 pb-4">
-                            <h3 className="text-2xl font-semibold mb-2" style={{ color: "var(--color-text)" }}>
-                                Make it yours
-                            </h3>
-                            <p className="text-sm  font-semibold leading-relaxed" style={{ color: "var(--color-muted)" }}>
+
+                            <motion.h3
+                                initial="hidden"
+                                whileInView="show"
+                                viewport={{ once: false }}
+                                className="text-2xl font-semibold mb-2"
+                                style={{ color: "var(--color-text)" }}
+                            >
+                                {"Make it yours".split("").map((c, i) => (
+                                    <motion.span
+                                        key={i}
+                                        variants={{
+                                            hidden: { opacity: 0, y: 20 },
+                                            show: {
+                                                opacity: 1,
+                                                y: 0,
+                                                transition: { delay: i * 0.02 }
+                                            }
+                                        }}
+                                    >
+                                        {c}
+                                    </motion.span>
+                                ))}
+                            </motion.h3>
+
+                            <motion.p
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: false }}
+                                className="text-sm font-semibold leading-relaxed"
+                                style={{ color: "var(--color-muted)" }}
+                            >
                                 Quickly apply filters and operators to
-                                <br />refine your issue lists and create custom  <br />views.
-                            </p>
+                                <br />refine your issue lists and create custom
+                                <br />views.
+                            </motion.p>
+
                         </div>
 
                         <div className="relative mt-4 overflow-hidden max-h-[280px]">
@@ -91,7 +165,7 @@ export function EndSection() {
                                 style={{ background: "linear-gradient(to top, var(--color-surface), transparent)" }}
                             />
                         </div>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>
