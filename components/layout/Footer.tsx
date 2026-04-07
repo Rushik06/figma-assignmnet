@@ -28,8 +28,11 @@ export function FooterSection() {
                 </h3>
                 <div className="flex gap-4 mt-10">
                     <Button
-                        className="rounded-full px-8 text-sm font-medium text-white hover:opacity-50 transition-opacity"
-                        style={{ background: "var(--color-btn-gradient)" }}
+                        className="rounded-full text-sm font-medium px-8 gap-2 hover:opacity-80 transition-opacity"
+                        style={{
+                            color: "var(--color-text)",
+                            background: "var(--color-btn-gradient)"
+                        }}
                     >
                         Sign up for free
                     </Button>
@@ -58,7 +61,7 @@ export function FooterSection() {
                             <Image src="/wordmark-light 1.png"
                                 alt="Linear"
                                 width={60}
-                                height={60}  
+                                height={60}
                             />
 
 

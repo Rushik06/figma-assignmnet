@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 
-const navLinks = ["Features", "Method", "Customers", "Changelog", "Integration","Pricing","Company"]
+const navLinks = ["Features", "Method", "Customers", "Changelog", "Integration", "Pricing", "Company"]
 
 export function Navbar() {
   return (
@@ -29,8 +29,8 @@ export function Navbar() {
             {navLinks.map((link) => (
               <span
                 key={link}
-                className="transition-colors cursor-pointer hover:text-white"
                 style={{ color: "var(--color-text)" }}
+                className="transition-colors cursor-pointer font-semibold hover:!text-[var(--color-muted)]"
               >
                 {link}
               </span>
@@ -40,15 +40,18 @@ export function Navbar() {
 
         <div className="flex items-center gap-3">
           <span
-            className="text-sm transition-colors cursor-pointer hover:text-white"
             style={{ color: "var(--color-text)" }}
+            className="transition-colors cursor-pointer font-semibold hover:!text-[var(--color-muted)]"
           >
             Log in
           </span>
           <Button
             size="sm"
-            className="rounded-full text-sm font-medium text-white px-8 gap-2 hover:opacity-50 transition-opacity"
-            style={{ background: "var(--color-btn-gradient)" }}
+            className="rounded-full text-sm font-medium px-8 gap-2 hover:opacity-80 transition-opacity"
+            style={{
+              color: "var(--color-text)",
+              background: "var(--color-btn-gradient)"
+            }}
           >
             Sign up
           </Button>

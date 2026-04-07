@@ -49,8 +49,11 @@ export function HeroSection() {
 
                 <Button
                     size="lg"
-                    className="rounded-full text-sm font-medium text-white px-8 gap-2 hover:opacity-50 transition-opacity"
-                    style={{ background: "var(--color-btn-gradient)" }}
+                    className="rounded-full text-sm font-medium px-8 gap-2 hover:opacity-80 transition-opacity"
+                    style={{
+                        color: "var(--color-text)",
+                        background: "var(--color-btn-gradient)"
+                    }}
                 >
                     Get started <ChevronRight size={16} />
                 </Button>
