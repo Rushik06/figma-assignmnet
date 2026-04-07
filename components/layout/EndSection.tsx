@@ -74,8 +74,7 @@ export function EndSection() {
                             </h3>
                             <p className="text-sm  font-semibold leading-relaxed" style={{ color: "var(--color-muted)" }}>
                                 Quickly apply filters and operators to
-                                <br />refine your issue lists and create custom
-                                <br />views.
+                                <br />refine your issue lists and create custom  <br />views.
                             </p>
                         </div>
 
